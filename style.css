@@ -1,0 +1,843 @@
+<<<<<<< HEAD
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+button {
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: black;
+  zoom: 0.9;
+  padding-right: 10px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+  padding: 10px 20px;
+}
+.logo {
+  height: 40px;
+  margin-right: 15px;
+  filter: invert(1);
+  cursor: pointer;
+}
+.home-icon {
+  height: 25px;
+  margin: 0 8px;
+  filter: invert(100%) brightness(100%) contrast(100%);
+  fill: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.icon {
+  height: 25px;
+  margin: 0 8px;
+  filter: invert(100%) brightness(60%) contrast(100%);
+  fill: rgb(148, 148, 148);
+  cursor: pointer;
+}
+
+.icon-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #282828;
+  box-sizing: content-box;
+}
+
+.navbar-middle {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.navbar-left,
+.navbar-middle,
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-bar {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  background-color: #1c1c1c;
+  padding: 6px 12px;
+  border-radius: 24px;
+  width: 500px;
+  height: 50px;
+}
+
+.search-bar .divider {
+  height: 26px;
+  width: 1px;
+  background-color: rgb(165, 165, 165);
+  margin: 0 10px;
+}
+
+.search-bar input {
+  background: transparent;
+  border: none;
+  color: white;
+  margin: 0 10px;
+  width: 100%;
+  font-size: 14px;
+  outline: none;
+}
+.navbar-right .icon {
+  height: 18px;
+}
+.navbar-right .divider {
+  height: 30px;
+  width: 1px;
+  background-color: rgb(165, 165, 165);
+  margin: 0 10px;
+}
+
+.navbar-right a {
+  color: rgb(155, 154, 154);
+  font-weight: 700;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+.login-btn {
+  padding: 10px 32px;
+  border-radius: 24px;
+  font-family: "Roboto" sans-serif;
+  font-weight: 700;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  margin-left: 15px;
+  border: none;
+  height: 50px;
+  white-space: nowrap;
+  font-size: large;
+}
+
+.navbar-right a {
+  white-space: nowrap;
+}
+
+.playlist-btn {
+  border-color: white;
+  background-color: white;
+  border-radius: 24px;
+  padding: 10px 20px;
+  width: fit-content;
+  font-weight: bolder;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.bg-back {
+  background-color: #121212;
+  border-radius: 7px;
+  padding: 20px 10px 20px 10px;
+}
+.bg-back2 {
+  background-color: #1f1f1f;
+  border-radius: 7px;
+  padding: 20px;
+}
+.header2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 15px;
+}
+
+.header .plus-icon {
+  height: 20px;
+  margin: 0 8px;
+  filter: invert(1);
+  cursor: pointer;
+}
+
+.header h3 {
+  width: fit-content;
+  font-family: sans-serif;
+  font-size: 18px;
+}
+.left {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 40px;
+  width: 25vw;
+  color: white;
+  margin-left: 10px;
+}
+
+.podcasts {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.footer {
+  margin-left: 13px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  position: relative;
+  max-width: 28vw;
+}
+.footer a {
+  color: grey;
+  font-size: 13px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.cookies {
+  position: relative;
+  top: 16px;
+  color: white;
+  font-size: 13.5px;
+  text-decoration: none;
+  white-space: nowrap;
+  margin-left: 13px;
+}
+
+.eng-foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-width: thin;
+  gap: 5px;
+  width: fit-content;
+  padding: 10px 14px;
+  border-radius: 30px;
+  filter: invert(1);
+  border-width: 0.1px;
+  font-weight: 1000;
+  font-family: "Roboto", sans-serif;
+  margin-left: 20px;
+}
+
+.create-playlist {
+  margin-left: 0px;
+}
+
+.navbar-right .icon {
+  margin-right: 0;
+}
+
+.install {
+  margin-right: 30px;
+}
+
+.container-body {
+  display: flex;
+  gap: 10px;
+}
+.right {
+  width: 75vw;
+  background-color: #222222;
+  padding: 10px;
+  border-radius: 7px;
+  color: white;
+  position: relative;
+}
+
+.header-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222222;
+  border-radius: 34px;
+}
+.showButton {
+  padding-right: 40px;
+  color: rgb(169, 166, 166);
+  font-weight: 800;
+}
+.header-right h1 {
+  color: white;
+  font-family: "Roboto";
+  padding: 20px;
+  margin-left: 20px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 2px solid white; */
+  padding-left: 20px;
+  row-gap: 10px;
+  max-height: 70vh;
+  overflow-y: scroll;
+}
+
+.play {
+  position: absolute;
+  right: 33px;
+  top: 118px;
+  background-color: #1fdf64;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.card {
+  width: 220px;
+  margin-top: 0;
+  /* margin-left: 20px; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  padding: 20px 20px 20px 20px;
+  /* background-color: #2e2e2e; */
+  border-radius: 7px;
+  position: relative;
+  height: max-content;
+  z-index: 1;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+.card ul {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.card ul li {
+  font-size: 12px;
+  list-style: none;
+}
+.card-img {
+  border-radius: 7px;
+  height: 175px;
+  width: 178px;
+}
+
+.playbar {
+  position: fixed;
+  bottom: 20px;
+  right: 30vw;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.play-btn {
+  background-color: #1db954;
+  color: #000000;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.play-btn:hover {
+  transform: scale(1.2);
+  box-shadow: 0 8px 16px rgb(0, 0, 0);
+}
+
+.play-btn2 {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #1db954;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn2 {
+  border: none;
+  background-color: transparent;
+  border-radius: 50%;
+  outline: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.play-btn2:hover {
+  transform: scale(1.2);
+  box-shadow: 0 8px 16px rgb(0, 0, 0);
+}
+.play-btn svg {
+  width: 60%;
+  height: 60%;
+}
+
+.card:hover {
+  background-color: #2e2e2e;
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.999);
+}
+
+.play-btn:active {
+  transform: scale(0.99);
+}
+
+.play-btn2:active {
+  transform: scale(0.99);
+}
+
+
+.card-clicked {
+  transform: scale(0.95);
+  box-shadow: 0 0
+  10px #1db95488;
+}
+=======
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+button {
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: black;
+  zoom: 0.9;
+  padding-right: 10px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+  padding: 10px 20px;
+}
+.logo {
+  height: 40px;
+  margin-right: 15px;
+  filter: invert(1);
+  cursor: pointer;
+}
+.home-icon {
+  height: 25px;
+  margin: 0 8px;
+  filter: invert(100%) brightness(100%) contrast(100%);
+  fill: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.icon {
+  height: 25px;
+  margin: 0 8px;
+  filter: invert(100%) brightness(60%) contrast(100%);
+  fill: rgb(148, 148, 148);
+  cursor: pointer;
+}
+
+.icon-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #282828;
+  box-sizing: content-box;
+}
+
+.navbar-middle {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.navbar-left,
+.navbar-middle,
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-bar {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  background-color: #1c1c1c;
+  padding: 6px 12px;
+  border-radius: 24px;
+  width: 500px;
+  height: 50px;
+}
+
+.search-bar .divider {
+  height: 26px;
+  width: 1px;
+  background-color: rgb(165, 165, 165);
+  margin: 0 10px;
+}
+
+.search-bar input {
+  background: transparent;
+  border: none;
+  color: white;
+  margin: 0 10px;
+  width: 100%;
+  font-size: 14px;
+  outline: none;
+}
+.navbar-right .icon {
+  height: 18px;
+}
+.navbar-right .divider {
+  height: 30px;
+  width: 1px;
+  background-color: rgb(165, 165, 165);
+  margin: 0 10px;
+}
+
+.navbar-right a {
+  color: rgb(155, 154, 154);
+  font-weight: 700;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+.login-btn {
+  padding: 10px 32px;
+  border-radius: 24px;
+  font-family: "Roboto" sans-serif;
+  font-weight: 700;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  margin-left: 15px;
+  border: none;
+  height: 50px;
+  white-space: nowrap;
+  font-size: large;
+}
+
+.navbar-right a {
+  white-space: nowrap;
+}
+
+.playlist-btn {
+  border-color: white;
+  background-color: white;
+  border-radius: 24px;
+  padding: 10px 20px;
+  width: fit-content;
+  font-weight: bolder;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.bg-back {
+  background-color: #121212;
+  border-radius: 7px;
+  padding: 20px 10px 20px 10px;
+}
+.bg-back2 {
+  background-color: #1f1f1f;
+  border-radius: 7px;
+  padding: 20px;
+}
+.header2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 15px;
+}
+
+.header .plus-icon {
+  height: 20px;
+  margin: 0 8px;
+  filter: invert(1);
+  cursor: pointer;
+}
+
+.header h3 {
+  width: fit-content;
+  font-family: sans-serif;
+  font-size: 18px;
+}
+.left {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 40px;
+  width: 25vw;
+  color: white;
+  margin-left: 10px;
+}
+
+.podcasts {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.footer {
+  margin-left: 13px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  position: relative;
+  max-width: 28vw;
+}
+.footer a {
+  color: grey;
+  font-size: 13px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.cookies {
+  position: relative;
+  top: 16px;
+  color: white;
+  font-size: 13.5px;
+  text-decoration: none;
+  white-space: nowrap;
+  margin-left: 13px;
+}
+
+.eng-foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-width: thin;
+  gap: 5px;
+  width: fit-content;
+  padding: 10px 14px;
+  border-radius: 30px;
+  filter: invert(1);
+  border-width: 0.1px;
+  font-weight: 1000;
+  font-family: "Roboto", sans-serif;
+  margin-left: 20px;
+}
+
+.create-playlist {
+  margin-left: 0px;
+}
+
+.navbar-right .icon {
+  margin-right: 0;
+}
+
+.install {
+  margin-right: 30px;
+}
+
+.container-body {
+  display: flex;
+  gap: 10px;
+}
+.right {
+  width: 75vw;
+  background-color: #222222;
+  padding: 10px;
+  border-radius: 7px;
+  color: white;
+  position: relative;
+}
+
+.header-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222222;
+  border-radius: 34px;
+}
+.showButton {
+  padding-right: 40px;
+  color: rgb(169, 166, 166);
+  font-weight: 800;
+}
+.header-right h1 {
+  color: white;
+  font-family: "Roboto";
+  padding: 20px;
+  margin-left: 20px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 2px solid white; */
+  padding-left: 20px;
+  row-gap: 10px;
+  max-height: 70vh;
+  overflow-y: scroll;
+}
+
+.play {
+  position: absolute;
+  right: 33px;
+  top: 118px;
+  background-color: #1fdf64;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.card {
+  width: 220px;
+  margin-top: 0;
+  /* margin-left: 20px; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  padding: 20px 20px 20px 20px;
+  /* background-color: #2e2e2e; */
+  border-radius: 7px;
+  position: relative;
+  height: max-content;
+  z-index: 1;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+.card ul {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.card ul li {
+  font-size: 12px;
+  list-style: none;
+}
+.card-img {
+  border-radius: 7px;
+  height: 175px;
+  width: 178px;
+}
+
+.playbar {
+  position: fixed;
+  bottom: 20px;
+  right: 30vw;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.play-btn {
+  background-color: #1db954;
+  color: #000000;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.play-btn:hover {
+  transform: scale(1.2);
+  box-shadow: 0 8px 16px rgb(0, 0, 0);
+}
+
+.play-btn2 {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #1db954;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn2 {
+  border: none;
+  background-color: transparent;
+  border-radius: 50%;
+  outline: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.play-btn2:hover {
+  transform: scale(1.2);
+  box-shadow: 0 8px 16px rgb(0, 0, 0);
+}
+.play-btn svg {
+  width: 60%;
+  height: 60%;
+}
+
+.card:hover {
+  background-color: #2e2e2e;
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.999);
+}
+
+.play-btn:active {
+  transform: scale(0.99);
+}
+
+.play-btn2:active {
+  transform: scale(0.99);
+}
+
+
+.card-clicked {
+  transform: scale(0.95);
+  box-shadow: 0 0
+  10px #1db95488;
+}
+>>>>>>> 1f947d751ecab6c13a3a37a0ff56df44fb0d6e6e

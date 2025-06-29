@@ -1,0 +1,157 @@
+/* Scrollbar for WebKit browsers */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e; /* Dark background for the track */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #555; /* Thumb color */
+  border-radius: 10px;
+  border: 2px solid #1e1e1e; /* Gives it spacing and rounded look */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #888; /* Slightly lighter on hover */
+}
+
+/* Optional: Scrollbar corner (when both X and Y scrollbars are visible) */
+::-webkit-scrollbar-corner {
+  background: #1e1e1e;
+}
+
+/* Firefox scrollbar (fallback) */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #555 #1e1e1e;
+}
+
+/* Container card */
+
+/* RGB Glow Layer */
+.card.playing::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(
+    45deg,
+    red,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet,
+    red
+  );
+  background-size: 400% 400%;
+  border-radius: 18px;
+  z-index: -1;
+  animation: rgbBorder 6s linear infinite;
+  filter: blur(8px);
+}
+
+/* Optional inner content styling */
+.song-card .content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Animation keyframes */
+@keyframes rgbBorder {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Scrollbar for WebKit browsers */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e; /* Dark background for the track */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #555; /* Thumb color */
+  border-radius: 10px;
+  border: 2px solid #1e1e1e; /* Gives it spacing and rounded look */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #888; /* Slightly lighter on hover */
+}
+
+/* Optional: Scrollbar corner (when both X and Y scrollbars are visible) */
+::-webkit-scrollbar-corner {
+  background: #1e1e1e;
+}
+
+/* Firefox scrollbar (fallback) */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #555 #1e1e1e;
+}
+
+/* Container card */
+
+/* RGB Glow Layer */
+.card.playing::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(
+    45deg,
+    red,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet,
+    red
+  );
+  background-size: 400% 400%;
+  border-radius: 18px;
+  z-index: -1;
+  animation: rgbBorder 6s linear infinite;
+  filter: blur(8px);
+}
+
+/* Optional inner content styling */
+.song-card .content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Animation keyframes */
+@keyframes rgbBorder {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

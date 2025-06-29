@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="navbar-left">
+        <img src="./svgs/logo.svg" class="logo" alt="Logo" />
+        <div class="home icon-bg">
+          <img src="./svgs/home.svg" class="home-icon" alt="Home" />
+        </div>
+      </div>
+
+      <div class="navbar-middle">
+        <div class="search-bar">
+          <img src="./svgs/search.svg" class="icon" alt="Search" />
+          <input type="text" placeholder="What do you want to play?" />
+          <div class="divider"></div>
+          <img src="./svgs/search-bar.svg" class="icon" alt="Search Icon" />
+        </div>
+      </div>
+
+      <div class="navbar-right">
+        <a href="#">Premium</a>
+        <a href="#">Support</a>
+        <a href="#">Download</a>
+        <div class="divider"></div>
+        <img src="./svgs/install.svg" class="icon" alt="Install Icon" />
+        <a href="#" class="install">Install App</a>
+        <a href="#">Sign up</a>
+        <button class="login-btn">Log in</button>
+      </div>
+    </div>
+
+    <div class="container-body">
+      <!-- Left Part -->
+      <div class="left bg-back">
+        <div class="header">
+          <h3>Your Library</h3>
+          <img src="./svgs/plus.svg" class="plus-icon" alt="Add" />
+        </div>
+
+        <div class="create-playlist">
+          <div class="header2 bg-back2">
+            <h3>Create your first playlist</h3>
+            <p>It's easy, we will help you</p>
+            <button class="playlist-btn">Create Playlist</button>
+          </div>
+        </div>
+
+        <div class="podcasts bg-back2">
+          <h3>Let's find some podcasts to follow</h3>
+          <p>We will keep you updated on new episodes</p>
+          <button class="playlist-btn">Browse podcasts</button>
+        </div>
+
+        <div class="footer">
+          <div><a href="https://www.spotify.com/in-en/legal/">Legal</a></div>
+          <div>
+            <a href="https://www.spotify.com/in-en/safetyandprivacy/"
+              >Safety &amp; Privacy Center</a
+            >
+          </div>
+          <div>
+            <a href="https://www.spotify.com/in-en/legal/privacy-policy/"
+              >Privacy Policy</a
+            >
+          </div>
+          <div>
+            <a href="https://www.spotify.com/in-en/legal/cookies-policy/"
+              >Cookies</a
+            >
+          </div>
+          <div>
+            <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"
+              >About Ads</a
+            >
+          </div>
+          <div>
+            <a href="https://www.spotify.com/in-en/accessibility/"
+              >Accessibility</a
+            >
+          </div>
+        </div>
+
+        <a
+          href="https://www.spotify.com/legal/cookies-policy/"
+          target="_blank"
+          rel="noopener"
+          class="cookies"
+          >Cookies</a
+        >
+        <button class="eng-foot">
+          <img src="./svgs/english.svg" height="15" alt="Language" />
+          English
+        </button>
+      </div>
+
+      <!-- Right Part -->
+      <div class="right">
+        <div class="header-right">
+          <h1>Spotify songs</h1>
+          <div class="showButton">Show all</div>
+        </div>
+
+        <div class="spotifyPlaylist">
+          <div class="card-container">
+            <!-- Sample Card -->
+            
+            <!-- Repeat card block for other songs -->
+          </div>
+        </div>
+        <div class="playbar">
+          <button id="prevPlay" class="play-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <circle cx="12" cy="12" r="12" fill="#1db954" />
+              <path
+                d="M8.06492 12.6258C8.31931 13.8374 9.67295 14.7077 12.3802 16.4481C15.3247 18.3411 16.797 19.2876 17.9895 18.9229C18.3934 18.7994 18.7654 18.5823 19.0777 18.2876C20 17.4178 20 15.6118 20 12C20 8.38816 20 6.58224 19.0777 5.71235C18.7654 5.41773 18.3934 5.20057 17.9895 5.07707C16.797 4.71243 15.3247 5.6589 12.3802 7.55186C9.67295 9.29233 8.31931 10.1626 8.06492 11.3742C7.97836 11.7865 7.97836 12.2135 8.06492 12.6258Z"
+                stroke="black"
+                stroke-width="1.5"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M4 4L4 20"
+                stroke="black"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+
+          <!-- Button 2 -->
+          <div class="play-btn2">
+            <button id="globalPlayBtn" class="btn2">
+              <img id="globalPlayIcon" src="./svgs/play.svg" alt="play">
+            </button>
+          </div>
+
+          <!-- Button 3 -->
+          <button id="nextPlay" class="play-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <circle cx="12" cy="12" r="12" fill="#1db954" />
+              <path
+                d="M15.9351 12.6258C15.6807 13.8374 14.327 14.7077 11.6198 16.4481C8.67528 18.3411 7.20303 19.2876 6.01052 18.9229C5.60662 18.7994 5.23463 18.5823 4.92227 18.2876C4 17.4178 4 15.6118 4 12C4 8.38816 4 6.58224 4.92227 5.71235C5.23463 5.41773 5.60662 5.20057 6.01052 5.07707C7.20304 4.71243 8.67528 5.6589 11.6198 7.55186C14.327 9.29233 15.6807 10.1626 15.9351 11.3742C16.0216 11.7865 16.0216 12.2135 15.9351 12.6258Z"
+                stroke="black"
+                stroke-width="1.5"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M20 5V19"
+                stroke="black"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
